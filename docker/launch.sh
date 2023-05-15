@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TAG='funabiki/TAP:python3.6.15'
+TAG='funabiki/tap:python3.6.15'
 PROJECT_DIR="$(cd "$(dirname "${0}")/.." || exit; pwd)"
 
 # build
