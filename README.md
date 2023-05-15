@@ -1,5 +1,8 @@
 # TAP
 
+**Note**
+This is a fork of the original TAP repository. The original repository can be found [here](https://github.com/das-lab/TAP)
+
 ## Research paper
 
 We present the findings of this work in the following research paper:
