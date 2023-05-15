@@ -1,7 +1,7 @@
 # TAP
 
-**Note**
-This is a fork of the original TAP repository. The original repository can be found [here](https://github.com/das-lab/TAP)
+> **Note**  
+> This is a fork of the original TAP repository. The original repository can be found [here](https://github.com/das-lab/TAP).
 
 ## Research paper
 
