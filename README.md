@@ -38,14 +38,19 @@ If you use TAP in a scientific publication, we would appreciate citations using 
 TAP: A Static Analysis Model for PHP Vulnerabilities Based on Token and Deep Learning Technology
 
 
+Make a dataset directory.
+```
+mkdir data
+```
+
 Data download from
 ```
 https://samate.nist.gov/SARD/index.php
 ```
 
-Unzip 
+Unzip in the `data` directory.
 ```
-SARD-testsuite-103.zip
+data/2015-10-27-php-vulnerability-test-suite.zip
 ```
  
 Classify samples.
