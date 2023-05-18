@@ -18,7 +18,7 @@ except:
 
 for root, dirs, files in os.walk("./data/"):
     for file in files:
-        if file.endswith(".php") and all(label not in file for label in ignore_labels):
+        if file.endswith(".php") and all([label not in file for label in ignore_labels]):
             filepath = root+"/"+file
             sum += 1
             with open(filepath,'r') as f:
