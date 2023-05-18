@@ -13,4 +13,5 @@ docker run -it --rm \
   --gpus all \
   -v "${PROJECT_DIR}:/workspace" \
   -w "/workspace" \
-  "${TAG}"
+  "${TAG}" \
+  bash

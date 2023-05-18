@@ -18,7 +18,7 @@ from keras.layers.embeddings import Embedding
 from keras.layers.recurrent import LSTM
 from keras.layers.core import Dense, Dropout, Activation, Flatten, Masking
 from keras.models import model_from_yaml
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 from keras.layers import Conv1D,MaxPool1D
 from gensim.models.word2vec import LineSentence
 from keras import backend as K
@@ -176,7 +176,10 @@ def train_lstm(n_symbols, embedding_weights, x_train, y_train, x_validate, y_val
 	model.summary()
 	print ("Train...")
 
-	model.fit(x_train, y_train, batch_size=batch_size, epochs=n_epoch, verbose=2,shuffle=True,class_weight='balanced', validation_data=(x_validate, y_validate))
+	# from sklearn.utils import class_weight
+	# balanced_weight = class_weight.compute_class_weight('balanced', np.unique(y_train), y_train)
+	# model.fit(x_train, y_train, batch_size=batch_size, epochs=n_epoch, verbose=2,shuffle=True,class_weight=balanced_weight, validation_data=(x_validate, y_validate))
+	model.fit(x_train, y_train, batch_size=batch_size, epochs=n_epoch, verbose=2,shuffle=True,class_weight=None, validation_data=(x_validate, y_validate))
 
 	print ("Evaluate...")
 	score = model.evaluate(x_validate, y_validate,

@@ -7,7 +7,9 @@ $unsafePath = "./unsafe_samples/";
 $safeTokenFile = "./safe_tokens.txt";
 $unsafeTokenFile = "./unsafe_tokens.txt";
 
-unlink('unsafe_y.txt');
+if (file_exists('unsafe_y.txt')) {
+	unlink('unsafe_y.txt');
+};
 xxxasdfasdfsdfs_getAllTokens($safePath,$safeTokenFile);
 xxxasdfasdfsdfs_getAllTokens($unsafePath,$unsafeTokenFile);
 // xxxasdfasdfsdfs_test();

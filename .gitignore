@@ -2,3 +2,14 @@
 data/*
 safe_samples/*
 unsafe_samples/*
+safe_tokens.txt
+unsafe_tokens.txt
+unsafe_y.txt
+
+# experiment
+nohup.out
+testdata_x.txt
+testdata_y.txt
+traindata_x.txt
+traindata_y.txt
+Word2vec_model.pkl
