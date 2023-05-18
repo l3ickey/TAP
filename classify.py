@@ -7,7 +7,7 @@ unsafefilepath = "./unsafe_samples"
 sum = 0
 numsafe = 0
 numunsafe = 0
-ignore_labels = ["CWE-209","CWE-311","CWE-327"]
+ignore_labels = ["CWE_209","CWE_311","CWE_327"]
 
 
 try:
