@@ -7,6 +7,7 @@ unsafefilepath = "./unsafe_samples"
 sum = 0
 numsafe = 0
 numunsafe = 0
+ignore_labels = ["CWE-209","CWE-311","CWE-327"]
 
 
 try:
@@ -17,7 +18,7 @@ except:
 
 for root, dirs, files in os.walk("./data/"):
     for file in files:
-        if file.endswith(".php"):
+        if file.endswith(".php") and all(label not in file for label in ignore_labels):
             filepath = root+"/"+file
             sum += 1
             with open(filepath,'r') as f:
