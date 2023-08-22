@@ -89,8 +89,10 @@ from sklearn.metrics import hamming_loss
 ham_distance = hamming_loss(y,predict_y)
 print("ham_distance: ",ham_distance)
 
-
 from sklearn.metrics import jaccard_similarity_score
 jaccrd_score = jaccard_similarity_score(y,predict_y,normalize = True)
 print("jaccrd_score: ",jaccrd_score)
+
+from sklearn.metrics import classification_report
+print(classification_report(y, predict_y, target_names=labels, digits=4))
 
